@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="levelOverlay">Level 1</div>
+    <div id="gameArea">
+    <h1>Simon Says</h1>
+    <h3>Click anywhere to start</h3>
+    <br>
+    <br>
+    <div class="column1">
+        <div class="btn" type="button" id="blue"></div>
+        <div class="btn" type="button" id="yellow"></div>
+    </div>
+    <div class="column2">
+        <div class="btn" type="button" id="orange"></div>
+        <div class="btn" type="button" id="red"></div>
+    </div>
+    </div>
+    <div class="gameRules" id="rules">
+        <div class="rulesContent">
+        <h3>Game rules</h3>
+        <ul>
+            <li>Click anywhere on the screen to start the game.</li>
+            <li>Remember the flashing button. Click the buttons in the same order.</li>
+            <li>Every upcoming level adds a new button. (i.g. Level 2 contains previous level 1 button + the new flashed button.)</li>
+            <li>If you miss any button from the sequence the game will end right away.</li>
+            <li>Every successful sequence will take you to another level. Best of luck!</li>
+        </ul>
+        <button id="closeRules" class="cRules">Got it!</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+h1 {
+    color: #320A6B;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+h3 {
+    color: #065084;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid black;
+    transition: all 0.2s ease; 
+}
+
+.bFlash {
+    filter: brightness(200%);
+    transform: scale(1.1);      
+    box-shadow: 0 0 25px white;
+}
+
+#blue {
+    background-color: #77BEF0;
+}
+
+#yellow {
+    background-color: #FFCB61;
+}
+
+#orange {
+    background-color: #FF894F;
+}
+
+#red {
+    background-color: #EA5B6F;
+}
+
+.column1 {
+    display: flex;
+    gap: 20px;
+}
+
+.column2 {
+    display: flex;
+    margin : 20px;
+    gap: 20px;
+}
+
+.gameRules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+.gameRules.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rulesContent {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+.rulesContent ul {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+#closeRules {
+  background-color: #320A6B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+#levelOverlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #77BEF0, #FFCB61, #FF894F, #EA5B6F);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 50px 100px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999; 
+    transition: opacity 0.3s ease;
+}
+
+.blur-background {
+    filter: blur(5px);
+}
+
